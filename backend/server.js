@@ -5,6 +5,7 @@ const memberRoutes = require('./routes/memberRoutes');
 const bookRoutes = require('./routes/bookRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const bookHistoryRoutes = require('./routes/bookHistoryRoutes');
+const statisticsRoutes = require('./routes/statisticsRoutes');
 require('dotenv').config(); // Only need this once
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/members', memberRoutes);
 app.use('/api/books', bookRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/history', bookHistoryRoutes);
+app.use('/api/stats', statisticsRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
