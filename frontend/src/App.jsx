@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-emerald-200">
+    <h1 className="text-3xl font-bold underline text-emerald-700">
       Tailwind Test
     </h1>
   )
