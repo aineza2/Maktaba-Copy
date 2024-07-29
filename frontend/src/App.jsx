@@ -19,7 +19,7 @@ export default function App() {
     if (token) {
       navigate("/dashboard/stats");
     } else {
-      navigate("/login");
+      navigate("/");
     }
   }, [user]);
   return (
