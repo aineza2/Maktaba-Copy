@@ -22,6 +22,7 @@ export default function LoginMolecule() {
     signIn(user)
       .then((res) => {
         localStorage.setItem("accessToken", res.data.token);
+        localStorage.setItem("user", JSON.stringify(res.data))
         setAppUser(res.data);
       })
       .catch((err) => console.log(err));
